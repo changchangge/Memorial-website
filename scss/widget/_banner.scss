@@ -1,0 +1,46 @@
+%common-width {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.banner {
+  @extend %common-width;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .banner-left {
+    font-size: $fontsizeLL;
+    color: $colorYellowD;
+    font-family: FZLB;
+  }
+}
+.nav {
+  border-top: 1.6px solid $colorYellowM;
+  height: 52px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .nav-item {
+    @extend %common-width;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    li {
+      padding: 0 16px;
+      margin-right: 80px;
+    }
+    a {
+      color: $colorRed;
+      font-size: $fontsizeM;
+      &hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+.stripe {
+  width: 100%;
+  height:22px;
+  background-image: url(../images/icon/stripe.png);
+  background-repeat: repeat-x;
+}
