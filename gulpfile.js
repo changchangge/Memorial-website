@@ -23,6 +23,7 @@ gulp.task('html',function() {
     .pipe(fileInclude({ prefix: '@@', basepath: '@file' }))
     .pipe(gulp.dest('dist'))
   gulp.src(['html/pages/**','!html/pages/main*'])
+    .pipe(fileInclude({ prefix: '@@', basepath: '@file' }))
     .pipe(gulp.dest('dist/pages'))
     .pipe(notify({ message: 'Html tasks complete.' })); //返回成功提示
 });
