@@ -1,0 +1,53 @@
+.path-calligraphy{
+    background-color: $colorWhite;
+    padding-top: 37px; 
+    div{
+        width: 1200px;
+        margin: 0 auto;
+        font-size: $fontsizeS;
+        color: $colorBlack;
+    }
+}
+.calligraphy-content{
+    background-color: $colorWhite;
+    padding-top: 60px;
+}
+.calligraphy-content-top{
+    width: 1247px;
+    margin: 0 auto;
+    div{//每一个书法作品
+        width: 268px;
+        height: 398px;
+        margin: 0 20px 40px;
+        border: 1px solid $colorGrayM;
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        div{//图片遮蔽层
+            width:268px;
+            height: 48px;
+            margin: 0px;
+            background-color: $colorGrayD;
+            opacity: 0.6;
+            text-align: center;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            span{//图片遮蔽层中间的字
+                color: $colorWhite;
+                font-size: $fontsizeS;
+                line-height: 46px;//用于居中
+            }
+        }
+    }
+}
+@media screen and (max-width: 1355px) {
+    .path-calligraphy div{
+        width: 100%;
+        text-align: center;
+    }
+    .calligraphy-content-top {
+       width: 100%;
+       text-align: center;
+    }
+}
