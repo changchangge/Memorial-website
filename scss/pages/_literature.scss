@@ -1,0 +1,110 @@
+.path-literature {
+    background-color: $colorWhite;
+    padding-top: 35px;
+    div {
+        width: 1200px;
+        margin: 0 auto;
+        font-size: $fontsizeS;
+        color: $colorBlack;
+    }
+}
+.literature-content{
+    background-color: $colorWhite;
+    padding-top: 50px;
+}
+.literature-content-title {
+    div[class="top"]{
+        text-align: center;
+        .literature_bracket_left{
+            margin: 0 10px;
+            display: inline-flex;
+        }
+        a{
+            text-decoration: none;
+            font-size: $fontsizeL;
+            display: inline-flex;
+            vertical-align: top;
+        }
+         .literature_bracket_right {
+             margin: 0 10px;
+             display: inline-flex;
+        }
+    }
+    div[class="buttom"]{
+        padding-top: 32px;
+        text-align: center;
+        div{//图标和文字外层小盒子
+            display: inline-flex;
+            margin: 0 65px; 
+            img{
+                margin-right: 5px;
+                display: inline-flex;
+            }
+            span{
+                font-size: $fontsizeML;
+            }
+        }
+    }
+}
+.literature-content-content{
+    margin-top: 22px;
+    width: 1200px;
+    margin: 0 auto;
+    div{
+        width: 500px;
+        border-bottom: 1px dashed $colorGrayD;
+        display: inline-block;
+        div{
+            height: 50px;
+            img {
+                margin-right: 8px;
+                display: inline-flex;
+                vertical-align: middle;
+            }
+            a {
+                text-decoration: none;
+                font-size: $fontsizeS;
+                display: inline-flex;
+                line-height: 50px;
+            }
+        }
+    }
+    div[class="literature-content-content-left"] {
+        margin-right: 194px;
+    }
+}
+.see-more{
+    width: 1200px;
+    margin: 42px auto 0px;
+    text-align: right;
+    a{
+        text-decoration: none;
+        font-size: $fontsizeS;
+    }
+}
+@media screen and (max-width: 1326px) {
+    .path-literature div{
+        width: 100%;
+        text-align: center;
+    }
+    .see-more{
+        width: 100%;
+        text-align: center;
+    }
+     .literature-content-content {
+        width: 100%;
+        text-align: center;
+        div div{
+            text-align: initial;
+        }
+        div[class="literature-content-content-left"]{
+            margin-right: 50px;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .literature-content-content div{
+        width: 300px;
+    }
+}
+
