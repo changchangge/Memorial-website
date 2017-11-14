@@ -40,7 +40,8 @@
                 margin-right: 5px;
                 display: inline-flex;
             }
-            span{
+            a{
+                text-decoration: none;
                 font-size: $fontsizeML;
             }
         }
@@ -107,4 +108,8 @@
         width: 300px;
     }
 }
-
+@media screen and (max-width: 690px) {
+    .literature-content-content div {
+        margin: 0 50px;
+    }
+}
