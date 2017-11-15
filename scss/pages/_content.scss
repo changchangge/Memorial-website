@@ -1,0 +1,87 @@
+.content {
+    background-color: $colorWhite;
+    padding-top: 20px;
+    width: 100%;
+    div {
+        width: 1200px;
+        margin: 0 auto;
+        font-size: $fontsizeS;
+        color: $colorBlack;
+    }
+}
+.content-article{
+    background-color: $colorWhite;
+    padding-top: 40px;
+}
+.content-article-titleGroup{
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    h1{
+        font-size: $fontsizeM;
+        font-weight: bold;
+    }
+    div{
+        margin-top: 20px;
+        span{
+            font-size: $fontsizeSS;
+            margin-right: 10px;
+        }
+    }
+}
+.content-article-content{
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 1200px;
+    height: 600px;
+}
+.content-article-editor{
+    padding-top: 75px;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: right;
+}
+.content-article-share{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 35px;
+    position: relative;
+    .bdsharebuttonbox{
+        width: 140px;
+        position: absolute;
+        right: -10px;
+    }
+}
+.content-article-line{
+    height: 70px;
+    width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px dashed #666666;
+}
+.content-article-preNext{
+    padding-top: 25px;
+    padding-bottom: 90px;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    div{
+        font-size: $fontsizeS;
+        a{
+            text-decoration: none;
+        }
+    }
+}
+@media screen and (max-width: 1355px) {//适配768px
+    .content div {
+        width: 680px;
+        text-align: center;
+    }
+    .content-article-content,
+    .content-article-editor,
+    .content-article-titleGroup,
+    .content-article-share,
+    .content-article-preNext,
+    .content-article-line {
+        width: 680px;
+    }
+}

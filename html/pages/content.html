@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>张大经老师专题网站</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    @@include('../templates/banner.html')
+    <div class="content">
+        <div>首页&nbsp;>>&nbsp;文学作品&nbsp;>>&nbsp;散文&nbsp;>>&nbsp;人物</div>
+    </div>
+    <div class="content-article">
+        <div class="content-article-titleGroup">
+            <h1>阿炳</h1>
+            <div>作者：<span class="content-article-postedBy"></span>文章来源：<span class="content-article-postedForm"></span>发布时间：<span class="content-article-postedTime"></span>更新时间：<span class="content-article-postedTime"></span>点击数：<span class="content-article-postedClick"></span></div>
+        </div>
+        <div class="content-article-content">
+        </div>
+        <div class="content-article-editor">
+            文章录入：13hope  责任编辑：13hope
+        </div>
+        <div class="content-article-share"><!--百度分享-->
+            <div class="bdsharebuttonbox" data-tag="share_1">
+                <a class="bds_mshare" data-cmd="mshare"></a>
+                <a class="bds_qzone" data-cmd="qzone" href="#"></a>
+                <a class="bds_tsina" data-cmd="tsina"></a>
+                <a class="bds_baidu" data-cmd="baidu"></a>
+                <a class="bds_renren" data-cmd="renren"></a>
+                <a class="bds_tqq" data-cmd="tqq"></a>
+                <a class="bds_more" data-cmd="more"></a>
+            </div>
+            <script>
+                window._bd_share_config = {
+                    common: {
+                        common: {
+                            //此处放置通用设置
+                        },
+                        share: [
+                            //此处放置分享按钮设置
+                        ],
+                        slide: [
+                            //此处放置浮窗分享设置
+                        ],
+                        image: [
+                            //此处放置图片分享设置
+                        ],
+                        selectShare: [
+                            //此处放置划词分享设置
+                        ]
+                    },
+                    share: [
+                        //此处放置分享按钮设置
+                    ],
+                    slide: [
+                        //此处放置浮窗分享设置
+                    ],
+                    image: [
+                        //此处放置图片分享设置
+                    ],
+                    selectShare: [
+                        //此处放置划词分享设置
+                    ]
+                }
+                //以下为js加载部分
+                with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5)];
+            </script>
+        </div>
+        <div class="content-article-line">
+        </div>
+        <div class="content-article-preNext">
+            <div>上一篇文章：<a href="#">不知道</a></div>
+            <div>下一篇文章：<a href="#">不知道</a></div>
+        </div>
+    </div>
+    @@include('../templates/footer.html')
+    <script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>
